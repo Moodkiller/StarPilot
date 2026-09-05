@@ -894,6 +894,9 @@ FW_VERSIONS = {
       b'\xf1\x00SP2 MFC  AT USA LHD 1.00 1.05 99210-Q5000 201012',
       b'\xf1\x00SP2 MFC  AT AUS RHD 1.00 1.03 99210-Q5500 230208',
     ],
+    (Ecu.transmission, 0x7e1, None): [
+        b'\xf1\x006V2B0_C2\x00\x006V2D4051\x00\x00CSP2N20KL1\xf1\xf7\xe2\x10',
+    ],    
   },
   CAR.KIA_OPTIMA_G4: {
     (Ecu.fwdRadar, 0x7d0, None): [
