@@ -692,7 +692,7 @@ class CAR(Platforms):
     flags=HyundaiFlags.HYBRID | HyundaiFlags.UNSUPPORTED_LONGITUDINAL,
   )
   KIA_SELTOS = HyundaiPlatformConfig(
-    [HyundaiCarDocs("Kia Seltos 2021", car_parts=CarParts.common([CarHarness.hyundai_a]))],
+    [HyundaiCarDocs("Kia Seltos 2021-24", car_parts=CarParts.common([CarHarness.hyundai_a]))],
     CarSpecs(mass=1337, wheelbase=2.63, steerRatio=14.56),
     flags=HyundaiFlags.CHECKSUM_CRC8,
   )
