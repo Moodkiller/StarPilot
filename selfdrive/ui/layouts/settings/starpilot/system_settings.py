@@ -965,14 +965,8 @@ class StarPilotSystemLayout(_SettingsPage):
     elif action_id == "ResetStock":
       self._on_reset_stock()
 
-  def _set_brightness(self, key, val):
+def _set_brightness(self, key, val):
     self._params.put_int(key, int(val))
-    if not ui_state.started and key == "ScreenBrightness":
-      if hasattr(HARDWARE, 'set_screen_brightness'):
-        HARDWARE.set_screen_brightness(int(val))
-    elif ui_state.started and key == "ScreenBrightnessOnroad":
-      if hasattr(HARDWARE, 'set_screen_brightness'):
-        HARDWARE.set_screen_brightness(int(val))
 
   def _get_konik_state(self):
     if Path("/data/not_vetted").exists():
