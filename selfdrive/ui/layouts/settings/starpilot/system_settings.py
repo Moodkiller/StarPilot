@@ -965,8 +965,8 @@ class StarPilotSystemLayout(_SettingsPage):
     elif action_id == "ResetStock":
       self._on_reset_stock()
 
-def _set_brightness(self, key, val):
-    self._params.put_int(key, int(val))
+  def _set_brightness(self, key, val):
+      self._params.put_int(key, int(val))
 
   def _get_konik_state(self):
     if Path("/data/not_vetted").exists():
