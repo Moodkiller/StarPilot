@@ -344,7 +344,7 @@ class Device:
     self._update_brightness()
     self._update_wakefulness()
 
-  def set_offroad_brightness(self, brightness: int | None):
+ def set_offroad_brightness(self, brightness: int | None):
     if brightness is None:
       brightness = BACKLIGHT_OFFROAD
     self._offroad_brightness = min(max(brightness, 0), 100)
